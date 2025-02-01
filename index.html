@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="nav-bar">
+            <img src="/imgs/logo.png" alt="F1 Logo" class="logo">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html" class="head-a">Home</a></li>
+                <li><a href="#about-f1" class="head-a">About</a></li>
+                <li><a href="#teams-container" class="head-a">Teams</a></li>
+                <li><a href="#gallery" class="head-a">Gallery</a></li>
+                <li><a href="#form-section" class="head-a">Contact</a></li>
+            </ul>
+            <div class="dropdown">
+                <i class="fa-solid fa-bars burger-menu" id="burger-menu"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="/index.html" class="head-a">Home</a></li>
+                    <li><a href="#about-f1" class="head-a">About</a></li>
+                    <li><a href="#teams-container" class="head-a">Teams</a></li>
+                    <li><a href="#gallery" class="head-a">Gallery</a></li>
+                    <li><a href="#form-section" class="head-a">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="tenor-gif-embed" data-postid="26330060" data-share-method="host" data-aspect-ratio="2.30216"
+            data-width="100%"><a
+                href="https://tenor.com/view/lewis-hamilton-silverstone2022-silverstone-overtake-redbull-gif-26330060">Lewis
+                Hamilton Silverstone2022 GIF</a>from <a href="https://tenor.com/search/lewis+hamilton-gifs">Lewis
+                Hamilton GIFs</a></div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </section>
+
+    <!-- about section -->
+    <section id="about-f1" class="about-section">
+        <div class="about-container">
+            <h2 class="about-title">About Formula 1</h2>
+            <p class="about-description">
+                Formula 1 (F1) is the highest class of international single-seater auto racing, governed by the
+                Fédération Internationale de l'Automobile (FIA). Established in 1950, it is renowned for its combination
+                of speed, technology, and strategy. F1 features a series of races, known as Grands Prix, held on
+                circuits and street tracks worldwide, offering breathtaking action and intense rivalries.
+
+                The sport is a blend of cutting-edge engineering and elite driving skill. Teams like Ferrari, Mercedes,
+                and Red Bull Racing push the boundaries of car design, incorporating aerodynamics, hybrid power units,
+                and advanced materials. Drivers, such as Lewis Hamilton, Max Verstappen, and Fernando Alonso, showcase
+                unparalleled talent and bravery, often reaching speeds exceeding 200 mph.
+
+                F1 is not just about speed; it involves intricate race strategies, tire management, and split-second
+                decisions, making it as much about brains as it is about brawn. With millions of fans globally, Formula
+                1 is a thrilling spectacle that continues to captivate audiences and innovate the future of automotive
+                technology.
+            </p>
+            <div class="about-content">
+                <img src="imgs/ferrari-shum.webp" alt="Formula 1 Car" class="about-image" />
+                <img src="imgs/Mercedes.jpg" alt="Formula 1 Car" class="about-image" />
+                <img src="imgs/red-bull-rb16.jpg" alt="Formula 1 Car" class="about-image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- teams and standings with api -->
+    <section id="teams-container" class="teams-container">
+        <h2 class="teams-h2">Formula 1 Teams</h2>
+        <div id="teams">
+            <!-- red bull -->
+            <div class="team" id="red-bull-racing">
+                <div class="team-header">
+                    <img src="/imgs/red-bull.jpeg" alt="Red Bull Racing" class="team-img" />
+                    <div class="team-info">
+                        <h2>Red Bull Racing</h2>
+                        <p><strong class="team-strong">Principal:</strong> Christian Horner</p>
+                        <p><strong class="team-strong">Championships:</strong> 5</p>
+                        <p><strong class="team-strong">Base:</strong> Milton Keynes, UK</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">Red Bull Racing is a prominent Formula 1 team known for its dominance in
+                            recent years, powered by
+                            cutting-edge technology and exceptional drivers.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+            <!-- Mercedes -->
+            <div class="team" id="mercedes-amg-petronas">
+                <div class="team-header">
+                    <img src="imgs/mercedes-team.jpg" alt="Mercedes-AMG Petronas" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">Mercedes-AMG Petronas</h2>
+                        <p><strong class="team-strong">Principal:</strong> Toto Wolff</p>
+                        <p><strong class="team-strong">Championships:</strong> 8</p>
+                        <p><strong class="team-strong">Base:</strong> Brackley, UK</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">Mercedes-AMG Petronas is a legendary Formula 1 team that dominated the hybrid
+                            era with innovative
+                            engineering and an iconic driver lineup.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+            <!-- Ferrari -->
+            <div class="team" id="scuderia-ferrari">
+                <div class="team-header">
+                    <img src="imgs/ferrari.jpg" alt="Scuderia Ferrari" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">Scuderia Ferrari</h2>
+                        <p><strong class="team-strong">Principal:</strong> Frédéric Vasseur</p>
+                        <p><strong class="team-strong">Championships:</strong> 16</p>
+                        <p><strong class="team-strong">Base:</strong> Maranello, Italy</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">Scuderia Ferrari is one of the most iconic teams in Formula 1, with a long
+                            history of success and a passion for motorsport excellence.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+
+            <!-- McLaren -->
+            <div class="team" id="mclaren-racing">
+                <div class="team-header">
+                    <img src="imgs/lando-norris-mclaren-oscar-pia.jpg" alt="McLaren Racing" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">McLaren Racing</h2>
+                        <p><strong class="team-strong">Principal:</strong> Andrea Stella</p>
+                        <p><strong class="team-strong">Championships:</strong> 8</p>
+                        <p><strong class="team-strong">Base:</strong> Woking, UK</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">McLaren Racing is a historic Formula 1 team, known for innovation,
+                            cutting-edge technology, and an impressive legacy.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+
+            <!-- Aston Martin -->
+            <div class="team" id="aston-martin">
+                <div class="team-header">
+                    <img src="imgs/aston martin.webp" alt="Aston Martin" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">Aston Martin</h2>
+                        <p><strong class="team-strong">Principal:</strong> Mike Krack</p>
+                        <p><strong class="team-strong">Championships:</strong> 0</p>
+                        <p><strong class="team-strong">Base:</strong> Silverstone, UK</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">Aston Martin is a team with rich racing heritage, bringing a blend of
+                            elegance, performance, and determination to Formula 1.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+
+            <!-- AlphaTauri -->
+            <div class="team" id="alpha-tauri">
+                <div class="team-header">
+                    <img src="imgs/rb-racing.avif" alt="AlphaTauri" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">AlphaTauri</h2>
+                        <p><strong class="team-strong">Principal:</strong> Franz Tost</p>
+                        <p><strong class="team-strong">Championships:</strong> 0</p>
+                        <p><strong class="team-strong">Base:</strong> Faenza, Italy</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">AlphaTauri, a sister team to Red Bull Racing, focuses on nurturing young
+                            talent and competing at the highest level of motorsport.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+
+            <!-- Williams -->
+            <div class="team" id="williams-racing">
+                <div class="team-header">
+                    <img src="imgs/williams.jpg" alt="Williams Racing" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">Williams Racing</h2>
+                        <p><strong class="team-strong">Principal:</strong> James Vowles</p>
+                        <p><strong class="team-strong">Championships:</strong> 9</p>
+                        <p><strong class="team-strong">Base:</strong> Grove, UK</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">Williams Racing, a team with a proud history in Formula 1, remains dedicated
+                            to innovation and fierce competition on the track.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+
+            <!-- Alfa Romeo -->
+            <div class="team" id="alfa-romeo">
+                <div class="team-header">
+                    <img src="imgs/zauber.jpeg" alt="Alfa Romeo" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">Alfa Romeo</h2>
+                        <p><strong class="team-strong">Principal:</strong> Alessandro Alunni Bravi</p>
+                        <p><strong class="team-strong">Championships:</strong> 0</p>
+                        <p><strong class="team-strong">Base:</strong> Hinwil, Switzerland</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">Alfa Romeo competes with a balance of passion and engineering precision,
+                            representing the brand's legacy of excellence.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+
+            <!-- Alpine -->
+            <div class="team" id="alpine-f1-team">
+                <div class="team-header">
+                    <img src="imgs/alpine.webp" alt="Alpine F1 Team" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">Alpine F1 Team</h2>
+                        <p><strong class="team-strong">Principal:</strong> Otmar Szafnauer</p>
+                        <p><strong class="team-strong">Championships:</strong> 2</p>
+                        <p><strong class="team-strong">Base:</strong> Enstone, UK</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">Alpine, the rebranded Renault team, combines French engineering excellence
+                            with a focus on innovation and competitive spirit.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+
+            <!-- Haas -->
+            <div class="team" id="haas-f1-team">
+                <div class="team-header">
+                    <img src="imgs/haas.jpg" alt="Haas F1 Team" class="team-img" />
+                    <div class="team-info">
+                        <h2 class="team-h2">Haas F1 Team</h2>
+                        <p><strong class="team-strong">Principal:</strong> Guenther Steiner</p>
+                        <p><strong class="team-strong">Championships:</strong> 0</p>
+                        <p><strong class="team-strong">Base:</strong> Kannapolis, USA</p>
+                        <p class="team-about">About Team</p>
+                        <p class="team-p">Haas F1 Team, the first American team in decades, brings a fresh perspective
+                            to the grid with a focus on efficiency and determination.</p>
+                    </div>
+                </div>
+                <div class="drivers">
+                    <h3 class="team-h3">Drivers</h3>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- gallery section -->
+    <section class="gallery-section" id="gallery">
+        <h2 class="gallery-title">Formula 1 Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="/imgs/ayrton-senaa.webp" alt="Iconic F1 Car">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/legendary-moment.jpg" alt="Legendary F1 Moment">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/fan-celebration.jpg" alt="Fan Celebration">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/race-action.avif" alt="F1 Race Action">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/pit-stop.jpg" alt="F1 Pit Stop">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/f1-night-race.avif" alt="F1 Night Race">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/f1-celebration.jpg" alt="F1 Celebration">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/race-2.jpg" alt="F1 Race">
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="contact-form" id="form-section">
+        <h2 class="contact-from-h2">Contact Us</h2>
+        <form id="contact-form" method="POST" novalidate>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="name">Surname:</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div class="error" id="messageError"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- cookies -->
+    <section>
+        <div id="cookie-notification" class="cookie-notification hidden">
+            <p>
+                This website uses cookies to enhance your experience. By continuing to use this site, you accept our
+                cookie policy.
+            </p>
+            <button id="accept-cookies" class="accept-button">Accept</button>
+        </div>
+
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="imgs/footer-logo.jpg" alt="Company Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://www.facebook.com/Formula1" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@f1" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/f1/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/company/formula-one-management-ltd/" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
