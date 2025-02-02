@@ -20,7 +20,7 @@ const nameRegex = /^[a-zA-Z\s]*$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 form.addEventListener("submit", (event) => {
-  let isValid = true;
+  let valid = true;
 
   // Reset error messages and input styles
   nameError.textContent = "";
@@ -34,11 +34,11 @@ form.addEventListener("submit", (event) => {
   if (nameInput.value.trim() === "") {
     nameError.textContent = "Name is required.";
     nameInput.style.border = "5px solid red";
-    isValid = false;
+    valid = false;
   } else if (!nameRegex.test(nameInput.value)) {
     nameError.textContent = "Name can only contain letters and spaces.";
     nameInput.style.border = "5px solid red";
-    isValid = false;
+    valid = false;
   } else {
     nameInput.style.border = "5px solid green";
   }
@@ -47,11 +47,11 @@ form.addEventListener("submit", (event) => {
   if (emailInput.value.trim() === "") {
     emailError.textContent = "Email is required.";
     emailInput.style.border = "5px solid red";
-    isValid = false;
+    valid = false;
   } else if (!emailRegex.test(emailInput.value)) {
     emailError.textContent = "Invalid email format.";
     emailInput.style.border = "5px solid red";
-    isValid = false;
+    valid = false;
   } else {
     emailInput.style.border = "5px solid green";
   }
@@ -60,12 +60,12 @@ form.addEventListener("submit", (event) => {
   if (messageInput.value.trim() === "") {
     messageError.textContent = "Message is required.";
     messageInput.style.border = "5px solid red";
-    isValid = false;
+    valid = false;
   } else {
     messageInput.style.border = "5px solid green";
   }
 
-  if (!isValid) {
+  if (!valid) {
     event.preventDefault();
   } else {
     alert("Form submitted successfully!");
