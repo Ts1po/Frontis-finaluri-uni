@@ -1,4 +1,4 @@
-// JavaScript for toggling dropdown menu
+// dropdown menu JS
 const burgerMenu = document.getElementById("burger-menu");
 const dropdownMenu = document.querySelector(".dropdown-menu");
 
@@ -7,7 +7,7 @@ burgerMenu.addEventListener("click", () => {
     dropdownMenu.style.display === "block" ? "none" : "block";
 });
 
-/* Contact form logic */
+/* Contact form JS */
 const form = document.getElementById("contact-form");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
@@ -76,7 +76,7 @@ form.addEventListener("submit", (event) => {
   }
 });
 
-// adding header bg on scroll logic
+// adding header bg on scroll JS
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
   const navBar = document.querySelector(".nav-bar");
@@ -157,7 +157,6 @@ async function fetchDriverData() {
 fetchDriverData();
 
 /* cookies */
-
 function setCookie(name, value, days) {
   const date = new Date();
   date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000); 
@@ -179,11 +178,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const cookieNotification = document.getElementById("cookie-notification");
     const acceptButton = document.getElementById("accept-cookies");
 
-    // Always show the cookie notification on page load
     cookieNotification.classList.add("show");
     cookieNotification.classList.remove("hidden");
 
-    // Handle click on the accept button
     acceptButton.addEventListener("click", () => {
         cookieNotification.classList.remove("show");
         setTimeout(() => {
