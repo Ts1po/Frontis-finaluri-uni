@@ -10,9 +10,11 @@ burgerMenu.addEventListener("click", () => {
 /* Contact form JS */
 const form = document.getElementById("contact-form");
 const nameInput = document.getElementById("name");
+const surnameInput = document.getElementById("surname");
 const emailInput = document.getElementById("email");
 const messageInput = document.getElementById("message");
 const nameError = document.getElementById("nameError");
+const surNameError = document.getElementById("surNameError");
 const emailError = document.getElementById("emailError");
 const messageError = document.getElementById("messageError");
 
@@ -24,9 +26,11 @@ form.addEventListener("submit", (event) => {
 
   // Reset error messages and input styles
   nameError.textContent = "";
+  surNameError.textContent = "";
   emailError.textContent = "";
   messageError.textContent = "";
   nameInput.style.border = "";
+  surnameInput.style.border = "";
   emailInput.style.border = "";
   messageInput.style.border = "";
 
@@ -41,6 +45,18 @@ form.addEventListener("submit", (event) => {
     valid = false;
   } else {
     nameInput.style.border = "5px solid green";
+  }
+  // Surnname validation
+  if (surnameInput.value.trim() === "") {
+    surNameError.textContent = "Surname is required.";
+    surnameInput.style.border = "5px solid red";
+    valid = false;
+  } else if (!nameRegex.test(nameInput.value)) {
+    surNameError.textContent = "Name can only contain letters and spaces.";
+    surnameInput.style.border = "5px solid red";
+    valid = false;
+  } else {
+    surnameInput.style.border = "5px solid green";
   }
 
   // Email validation
