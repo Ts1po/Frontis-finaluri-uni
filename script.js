@@ -51,8 +51,8 @@ form.addEventListener("submit", (event) => {
     surNameError.textContent = "Surname is required.";
     surnameInput.style.border = "5px solid red";
     valid = false;
-  } else if (!nameRegex.test(nameInput.value)) {
-    surNameError.textContent = "Name can only contain letters and spaces.";
+  } else if (!nameRegex.test(surnameInput.value)) {
+    surNameError.textContent = "Surname can only contain letters and spaces.";
     surnameInput.style.border = "5px solid red";
     valid = false;
   } else {
@@ -85,7 +85,7 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
   } else {
     alert("Form submitted successfully!");
-    form.reset(); // Clear the form
+    form.reset(); 
     nameInput.style.border = "";
     emailInput.style.border = "";
     messageInput.style.border = "";
